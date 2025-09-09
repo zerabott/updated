@@ -1,0 +1,2 @@
+2025-09-08 21:40:52,747 - confession_bot.migrations - ERROR - apply_migration:496 - Failed to apply migration 15: table posts_new has 24 columns but 25 values were supplied
+2025-09-08 21:40:52,750 - confession_bot.migrations - ERROR - migrate_to_latest:522 - Migration failed at version 15

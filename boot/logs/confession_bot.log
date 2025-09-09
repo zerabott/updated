@@ -1,0 +1,53 @@
+2025-09-08 21:40:34,712 - confession_bot.rate_limiter - WARNING - __init__:96 - Redis not available, falling back to in-memory: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-09-08 21:40:36,899 - confession_bot.backup_system - INFO - _ensure_backup_directory:34 - Backup directory: backups
+2025-09-08 21:40:40,735 - confession_bot.migrations - INFO - migrate_to_latest:517 - Applying 15 migrations
+2025-09-08 21:40:40,739 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 1: initial_schema
+2025-09-08 21:40:40,979 - confession_bot.migrations - INFO - apply_migration:492 - Migration 1 applied successfully
+2025-09-08 21:40:40,987 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 2: add_user_preferences
+2025-09-08 21:40:41,367 - confession_bot.migrations - INFO - apply_migration:492 - Migration 2 applied successfully
+2025-09-08 21:40:41,373 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 3: add_confession_drafts
+2025-09-08 21:40:42,142 - confession_bot.migrations - INFO - apply_migration:492 - Migration 3 applied successfully
+2025-09-08 21:40:42,152 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 4: add_scheduled_confessions
+2025-09-08 21:40:43,228 - confession_bot.migrations - INFO - apply_migration:492 - Migration 4 applied successfully
+2025-09-08 21:40:43,240 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 5: add_analytics_tables
+2025-09-08 21:40:44,114 - confession_bot.migrations - INFO - apply_migration:492 - Migration 5 applied successfully
+2025-09-08 21:40:44,123 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 6: add_notification_system
+2025-09-08 21:40:45,353 - confession_bot.migrations - INFO - apply_migration:492 - Migration 6 applied successfully
+2025-09-08 21:40:45,363 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 7: enhance_content_moderation
+2025-09-08 21:40:46,394 - confession_bot.migrations - INFO - apply_migration:492 - Migration 7 applied successfully
+2025-09-08 21:40:46,404 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 8: add_performance_indexes
+2025-09-08 21:40:49,593 - confession_bot.migrations - INFO - apply_migration:492 - Migration 8 applied successfully
+2025-09-08 21:40:49,604 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 9: add_backup_metadata
+2025-09-08 21:40:50,323 - confession_bot.migrations - INFO - apply_migration:492 - Migration 9 applied successfully
+2025-09-08 21:40:50,330 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 10: add_user_profile_columns
+2025-09-08 21:40:50,678 - confession_bot.migrations - INFO - apply_migration:492 - Migration 10 applied successfully
+2025-09-08 21:40:50,692 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 11: add_channel_message_id
+2025-09-08 21:40:50,943 - confession_bot.migrations - INFO - apply_migration:492 - Migration 11 applied successfully
+2025-09-08 21:40:50,954 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 12: add_post_number_column
+2025-09-08 21:40:50,957 - confession_bot.migrations - INFO - apply_migration:480 - Migration 12: Column/table already exists, continuing
+2025-09-08 21:40:51,154 - confession_bot.migrations - INFO - apply_migration:492 - Migration 12 applied successfully
+2025-09-08 21:40:51,166 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 13: ensure_rank_definitions_columns
+2025-09-08 21:40:51,961 - confession_bot.migrations - INFO - apply_migration:492 - Migration 13 applied successfully
+2025-09-08 21:40:51,972 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 14: add_media_support_to_confessions
+2025-09-08 21:40:51,974 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,976 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,978 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,979 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,981 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,983 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,984 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,986 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,987 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:51,989 - confession_bot.migrations - INFO - apply_migration:480 - Migration 14: Column/table already exists, continuing
+2025-09-08 21:40:52,540 - confession_bot.migrations - INFO - apply_migration:492 - Migration 14 applied successfully
+2025-09-08 21:40:52,551 - confession_bot.migrations - INFO - apply_migration:468 - Applying migration 15: fix_content_null_constraint_for_media
+2025-09-08 21:40:52,747 - confession_bot.migrations - ERROR - apply_migration:496 - Failed to apply migration 15: table posts_new has 24 columns but 25 values were supplied
+2025-09-08 21:40:52,750 - confession_bot.migrations - ERROR - migrate_to_latest:522 - Migration failed at version 15
+2025-09-08 21:42:38,838 - confession_bot.rate_limiter - WARNING - __init__:96 - Redis not available, falling back to in-memory: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-09-08 21:42:40,594 - confession_bot.backup_system - INFO - _ensure_backup_directory:34 - Backup directory: backups
+2025-09-08 21:46:25,003 - confession_bot.rate_limiter - WARNING - __init__:96 - Redis not available, falling back to in-memory: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-09-08 21:46:26,660 - confession_bot.backup_system - INFO - _ensure_backup_directory:34 - Backup directory: backups
+2025-09-08 21:46:26,690 - confession_bot.migrations - INFO - migrate_to_latest:514 - Database is up to date
+2025-09-08 21:46:26,691 - confession_bot.backup_system - INFO - start_backup_system:348 - Initializing backup system...
+2025-09-08 21:46:26,694 - confession_bot.backup_system - INFO - start_auto_backup:328 - Auto backup started - running every 24 hours
+2025-09-08 21:46:28,275 - confession_bot - INFO - log_user_action:120 - User 0 - bot_started: University Confession Bot initialized
