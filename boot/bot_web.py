@@ -8,7 +8,7 @@ from flask import Flask, jsonify
 import os
 import sys
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 import subprocess
 import threading
 
@@ -39,9 +39,12 @@ def home():
     return jsonify({
         "status": "healthy",
         "service": "Telegram Confession Bot",
-        "timestamp": datetime.now(datetime.UTC).isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "bot_running": bot_status["running"],
-        "uptime": (datetime.now(datetime.UTC) - bot_status["start_time"]).total_seconds() if bot_status["start_time"] else 0
+        "uptime": (
+            (datetime.now(timezone.utc) - bot_status["start_time"]).total_seconds()
+            if bot_status["start_time"] else 0
+        )
     })
 
 @app.route("/health", methods=["GET"])
@@ -78,7 +81,7 @@ def run_bot():
     """Start bot.py as a non-blocking subprocess"""
     try:
         logger.info("🚀 Starting Telegram bot subprocess...")
-        bot_status["start_time"] = datetime.now(datetime.UTC)
+        bot_status["start_time"] = datetime.now(timezone.utc)
         bot_status["running"] = True
 
         # First, setup database
